@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top Trending Websites 2025 | Curated by AnyOther</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 1.8rem;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .card {
+      background-color: rgba(255, 255, 255, 0.1);
+      margin: 1rem;
+      padding: 1.5rem;
+      border-radius: 12px;
+      width: 250px;
+      text-align: center;
+      transition: transform 0.3s ease, background 0.3s ease;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    .card a {
+      color: #00ffe7;
+      text-decoration: none;
+      font-size: 1.2rem;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .card span {
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 4rem;
+      padding: 2rem;
+      font-size: 1rem;
+      color: #aaa;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Top Trending Websites (2025)</h1>
+    <p style="font-size: 1.1rem;">Curated by <strong>AnyOther</strong> | Based on traffic and popularity</p>
+  </header>
+
+  <div class="container" id="websiteContainer">
+    <!-- Popular website cards will be generated here -->
+  </div>
+
+  <h2>More Trending Links by AnyOther</h2>
+  <div class="container">
+    <div class="card">
+      <a href="https://www.similarweb.com/top-websites/" target="_blank">SimilarWeb Trends</a>
+      <span>Analytics & Rankings</span>
+    </div>
+    <div class="card">
+      <a href="https://trends.google.com/" target="_blank">Google Trends</a>
+      <span>Search Trends Worldwide</span>
+    </div>
+    <div class="card">
+      <a href="https://www.reddit.com/r/popular/" target="_blank">Reddit Popular</a>
+      <span>Trending Discussions</span>
+    </div>
+    <div class="card">
+      <a href="https://news.google.com/" target="_blank">Google News</a>
+      <span>Top Global News</span>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 | Created by <strong>AnyOther</strong> | Powered by HTML, CSS & JavaScript
+  </div>
+
+  <script>
+    const websites = [
+      { name: "Google", url: "https://www.google.com", visits: "5.9 billion/month" },
+      { name: "YouTube", url: "https://www.youtube.com", visits: "3.1 billion/month" },
+      { name: "Instagram", url: "https://www.instagram.com", visits: "2.0+ billion/month" },
+      { name: "ChatGPT", url: "https://chat.openai.com", visits: "1.5+ billion/month" },
+      { name: "Facebook", url: "https://www.facebook.com", visits: "1.5+ billion/month" },
+      { name: "WhatsApp", url: "https://www.whatsapp.com", visits: "1.4+ billion/month" },
+      { name: "Amazon India", url: "https://www.amazon.in", visits: "1.0+ billion/month" },
+    ];
+
+    const container = document.getElementById('websiteContainer');
+
+    websites.forEach(site => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML = `
+        <a href="${site.url}" target="_blank">${site.name}</a>
+        <span>${site.visits}</span>
+      `;
+      container.appendChild(card);
+    });
+  </script>
+</body><!-- Link Descriptions Section -->
+<h2>About the Trending Sources</h2>
+<div class="container" id="linkDescriptions">
+  <!-- JavaScript will fill this in -->
+</div>
+
+<script>
+  const descriptions = [
+    {
+      title: "SimilarWeb Trends",
+      desc: "Provides data on the most visited websites across the globe with in-depth traffic analytics."
+    },
+    {
+      title: "Google Trends",
+      desc: "Shows real-time search interest on popular keywords, topics, and queries around the world."
+    },
+    {
+      title: "Reddit Popular",
+      desc: "Aggregates top trending posts across all Reddit communities based on upvotes and engagement."
+    },
+    {
+      title: "Google News",
+      desc: "Delivers the most current global news stories in real time from verified sources and publishers."
+    }
+  ];
+
+  const descContainer = document.getElementById('linkDescriptions');
+
+  descriptions.forEach(item => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML = `
+      <strong style="color:#00ffe7; font-size:1.1rem;">${item.title}</strong>
+      <span style="display:block; margin-top:0.5rem;">${item.desc}</span>
+    `;
+    descContainer.appendChild(card);
+  });
+</script>
+
+</html>
